@@ -3,11 +3,43 @@
     <head>
         <meta charset="UTF-8">
         <title>Audio Player</title>
-
+        <link rel="stylesheet" href="styles.css">
     </head>
+
     <body>
         <div class="player">
             <h3>Audio Player</h3>
+            <audio id="audio"></audio>
+
+            <div>
+                <p>Select Song:</p>
+                <select id="songSelect">
+                    <option value="Audio files/CIZA - ISAKA (6AM) ft. Jazzworx _ Thukuthela (Official Music Video) - CIZA.mp3">Song 1</option>
+                    <option value="Audio files/Goon Flavour, Master KG _ Eemoh - Ngishutheni (Official Music Video) - Wanitwa Mos Entertainment.mp3">Song 2</option>
+                    <option value="Audio files/ZENZELE MUSIC VIDEO - DATAPROD112.mp3"></option>
+                </select>
+            </div>
+
+            <div>
+                <button id="prevBtn">Previous</button>
+                <button id="playBtn">Play</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="muteBtn">Mute</button>
+                <button id="nextBtn">Next</button>
+            </div>
+
+            <div>
+                <p>Volume</p>
+                <input type="range" id="volumeSlider" min="0" max="1" step="0.01">
+
+            </div>
+
+            <div class="time">
+                Time: <span id="currentTime">0:00</span>
+            </div>
+
         </div>
+    
+        <script src="script.js"></script>
     </body>
 </html>
